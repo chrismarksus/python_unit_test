@@ -1,0 +1,11 @@
+version: '2'
+services:
+  python:
+    build: .
+    command: /bin/bash
+    tty: true
+    stdin_open: true
+    ports:
+      - "8080:8080"
+    volumes:
+      - /c/Users/chris/repos/python_unit_test:/python_unit_test/
