@@ -1,5 +1,7 @@
 language: python
 sudo: required
+env:
+  - DOCKER_COMPOSE_VERSION=1.16.1
 services:
   - docker
 python:
