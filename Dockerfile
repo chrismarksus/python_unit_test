@@ -9,4 +9,11 @@ RUN apt-get update -y && \
     cd /usr/bin && \
     ln -s pydoc3 pydoc && \
     ln -s python3 python && \
-    ln -s python3-config python-config
+    ln -s python3-config python-config && \
+    cd /
+
+WORKDIR /python_unit_test
+
+ADD requirements.txt requirements.txt
+
+RUN pip3 install -r requirements.txt

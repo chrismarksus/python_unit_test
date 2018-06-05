@@ -24,3 +24,10 @@ services:
     command: python3 -m unittest discover -v
     volumes:
       - /c/Users/chris/repos/python_unit_test:/python_unit_test/
+  python-static-check:
+    build: .
+    container_name: python-static_check
+    working_dir: /python_unit_test/
+    command: pycodestyle --show-source --statistics ./app/ ./basicproject/
+    volumes:
+      - /c/Users/chris/repos/python_unit_test:/python_unit_test/
