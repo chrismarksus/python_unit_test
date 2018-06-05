@@ -52,6 +52,18 @@ python3 test/test_basicfunction.py
 
 ```
 
+### Using the docker compose sevices
+
+```bash
+# Run the dev environment
+docker-compose run python-dev bash
+
+# Run the tests for app
+docker-compose run python-app-test
+
+# Run the the tests for basic function
+docker-compose run python-basic-test
+```
 
 ### Prerequisites
 

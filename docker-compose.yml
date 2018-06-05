@@ -1,11 +1,26 @@
 version: '2'
 services:
-  python:
+  python-dev:
     build: .
+    container_name: python-dev
     command: /bin/bash
     tty: true
     stdin_open: true
     ports:
       - "8080:8080"
+    volumes:
+      - /c/Users/chris/repos/python_unit_test:/python_unit_test/
+  python-app-test:
+    build: .
+    container_name: python-app-test
+    working_dir: /python_unit_test/app/ 
+    command: python3 -m unittest discover -v
+    volumes:
+      - /c/Users/chris/repos/python_unit_test:/python_unit_test/
+  python-basic-test:
+    build: .
+    container_name: python-basic-test
+    working_dir: /python_unit_test/basicproject 
+    command: python3 -m unittest discover -v
     volumes:
       - /c/Users/chris/repos/python_unit_test:/python_unit_test/
