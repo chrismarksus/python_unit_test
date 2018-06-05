@@ -32,6 +32,10 @@ vagrant provision
 
 # to stop the VM 
 vagrant halt && vagrant destroy
+
+# move to the vagrant directory
+cd /vagrant
+
 ```
 
 Once the docker container is open in the terminal ```cd /python_unit_test/app``` and run the line ```python3 -m unittest discover``` this will run the unit tests in the ```/app``` directory.  
