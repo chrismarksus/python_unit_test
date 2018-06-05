@@ -7,6 +7,5 @@ services:
 python:
   - "3.6"
 script:
-  - docker-compose run python-app-test 
-  - echo $?
-  - docker logs
+  - docker run -it --rm cmarks/py-app-test bash -c 'cd app/ && python3 -m unittest discover -v'
+  - docker run -it --rm cmarks/py-app-test bash -c 'cd basicproject/ && python3 -m unittest discover -v'

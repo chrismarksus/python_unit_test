@@ -17,3 +17,5 @@ WORKDIR /python_unit_test
 ADD requirements.txt requirements.txt
 
 RUN pip3 install -r requirements.txt
+
+ADD ./ ./
