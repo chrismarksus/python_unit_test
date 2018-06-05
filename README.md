@@ -36,6 +36,19 @@ vagrant halt && vagrant destroy
 
 Once the docker container is open in the terminal ```cd /python_unit_test/app``` and run the line ```python3 -m unittest discover``` this will run the unit tests in the ```/app``` directory.  
 
+
+```bash
+# move to the directory
+cd basicproject/
+
+# Run the python unittest
+python3 -m unittest discover -v
+# or
+python3 test/test_basicfunction.py
+
+```
+
+
 ### Prerequisites
 
 To get start you will need to the following software:
@@ -47,3 +60,7 @@ To get start you will need to the following software:
 ## Authors
 
 * **Chris Marks** - *Initial work* - [chrismarksus](https://github.com/chrismarksus)
+
+## Links
+* [be pythonic](http://mikegrouchy.com/blog/2012/05/be-pythonic-__init__py.html)
+* [python unit testing structuring your project](http://www.patricksoftwareblog.com/python-unit-testing-structuring-your-project/)
