@@ -6,3 +6,5 @@ python:
   - "3.6"
 script:
   - docker-compose run python-app-test 
+  - echo $?
+  - docker logs
