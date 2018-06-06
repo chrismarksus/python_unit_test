@@ -1,4 +1,4 @@
-# Python unit test project 
+# Python unit test project [![Build Status](https://travis-ci.org/chrismarksus/python_unit_test.svg?branch=master)](https://travis-ci.org/chrismarksus/python_unit_test)
 
 This project is a demo project for teaching how to use unit testing in python.
 
